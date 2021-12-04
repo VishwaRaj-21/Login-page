@@ -1,0 +1,194 @@
+/*font-style*/
+
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300,700&display=swap');
+
+body 
+{
+	margin:  0;
+	padding: 0;
+	font-family: 'Catamaran', sans-serif;
+	background-size: cover;
+	background-color: rgb(0, 0, 160);
+	color: rgb(102, 102, 102);
+}
+
+/*Background-curve*/
+.curve {
+	  object-fit: cover 
+	  display: cover;
+    transform: scaleX(-1);
+    position: absolute;
+    bottom: -10%;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.curve svg {
+    position: relative;
+    display: cover;
+    width: calc(190% + 1.3px);
+    height: 550px;
+    transform: rotateY(180deg);
+}
+
+.curve .shape-fill {
+    fill: rgb(0, 71, 179);
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 60px;
+  color: rgb(51, 51, 51);
+}
+
+.log-in-form
+{
+	position: relative;
+	background-repeat: no-repeat;
+	align-content: center;
+	border-radius: 20px;
+	width:  300px;
+	box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+	background: #fff;
+	padding: 20px ;
+	margin: 8% 35% 5% ;
+	text-align: center;
+	bottom:  50px;
+}
+
+.textbox
+{
+	border-radius: 40px;
+	padding: 4px ;
+	margin: 20px 0;
+	width: 100%;
+	border: 1px solid #F0F0F0;
+	outline: none;
+	text-align: justify;
+	background-color: #F0F0F0;
+}
+
+.box
+{
+	font-size: 20px;
+	border-radius: 20px;
+	padding: 5px;
+	margin: 5px 0;
+	width: 50%;
+	border: 1px solid #F0F0F0;
+	outline: none;
+    background-color: #F0F0F0;
+}
+
+/*Font-icon*/
+
+img
+{
+	width: 6%;
+	height: 6%;
+	padding-left: 15px;
+	padding-right: 10px;
+	padding-top: 5px;
+	fill: rgb(179, 179, 179);
+}
+
+/*Custom Check-box Design*/
+
+.container
+{
+  float: left;
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  border-radius: 15%;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #C8C8C8;
+  border-radius: 20%;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #B0B0B0;
+  border-radius: 20%;
+}
+
+/* When the checkbox is checked, add a yellow background */
+.container input:checked ~ .checkmark {
+  background-color: #ffa64d;
+  border-radius: 20%;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/*Log-in-button*/
+
+.btn
+{
+	background-image: linear-gradient(to right, #ffa64d 30%, #c6538c);
+	border-radius: 40px;
+	padding: 7px ;
+	margin: 4px 0;
+	width: 100%;
+	border: 1px solid #999;
+	outline: none;
+	text-align: center;
+	color: white;
+	font-size: 25px;
+	margin-top: 10px;
+}
+
+.forget
+{
+  font-size: 17px;
+}
+
+.signup_link
+{
+	padding-top: 25%;
+}
